@@ -9,3 +9,9 @@ __pycache__/
 # Editores
 .vscode/
 .idea/
+
+# Soluções/gabaritos NUNCA vão para o repositório do aluno
+solucao/
+solucao-professor/
+gabarito*/
+**/solucao/

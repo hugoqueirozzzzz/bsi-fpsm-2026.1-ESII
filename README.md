@@ -22,8 +22,8 @@ A jornada passa por **dívida técnica, princípios SOLID, testes, padrões de p
 |---|------|--------|
 | 0 | Preparação do ambiente (conta GitHub, fork, Codespaces, Git) | *feita no início da Aula 1* |
 | 1 | Qualidade de Software e Dívida Técnica | [📂 **aula01**](aula01/) |
-| 2 | Arquitetura, ADR, UML e Princípios de Projeto | 🔒 *em breve* |
-| 3 | Diagramas, Dataclasses e SRP | 🔒 *em breve* |
+| 2 | Arquitetura, ADR, UML e Princípios de Projeto | [📂 **aula02**](aula02/) |
+| 3 | Diagramas, Dataclasses e SRP | [📂 **aula03**](aula03/) |
 | 4 | OCP — Aberto/Fechado | 🔒 *em breve* |
 | 5 | LSP, ISP e DIP | 🔒 *em breve* |
 | **6** | **Prova escrita 1** | — |

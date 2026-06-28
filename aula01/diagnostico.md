@@ -1,7 +1,7 @@
 Problemas/Divergências
 
 Problema 1 
-UC01 - A documentação pede que ao registrar um empréstimo o atendente solicite um email, porém, o código aceita qualquer grafia de email podendo até mesmo conter erros, por exemplo  fulano_ahotmail.com, não necessariamente seguindo a norma "xxxx@xxx.com". É um problema pois pode ocasionar em empréstimos onde o usuário não será informado uma vez que o software pode conter o seu email errado.
+UC01 - A documentação pede que ao registrar um empréstimo o atendente solicite um email, porém, o código aceita qualquer grafia de email podendo até mesmo conter erros, por exemplo,  fulano_ahotmail.com, não necessariamente seguindo a norma "xxxx@xxx.com". É um problema pois pode ocasionar em empréstimos onde o usuário não será informado uma vez que o software pode conter o seu email errado.
 
 Problema 2
 UC01 - A documentação pede que ao registrar um empréstimo, o atendente solicite a quantidade de dias, contudo, o código aceita dias em números inteiros (negativos e positivos). É um problema pois por conta de erro humano, algum usuário pode vir a pagar mais do que o acordado. 

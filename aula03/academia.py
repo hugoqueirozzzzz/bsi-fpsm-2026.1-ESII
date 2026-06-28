@@ -41,7 +41,7 @@ class Academia:
     def check_in(self):
         # (2) TELA
         nome = input("Nome do aluno: ")
-        # (1) REGRA: encontra o aluno e conta o check-in
+        # (1) REGRA: encontra o aluno e conta o checkin
         aluno = None
         for a in self.alunos:
             if a["nome"] == nome:

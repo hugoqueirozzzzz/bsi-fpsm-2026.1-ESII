@@ -24,6 +24,9 @@ class VIP(Ingresso):
     def preco(self):
         return 35.0
 
+class Cortesia(Ingresso):
+    def preco(self):
+        return 0.0
 
 # ---------------------------------------------------------------
 # TODO (Parte B): adicione aqui a classe Cortesia

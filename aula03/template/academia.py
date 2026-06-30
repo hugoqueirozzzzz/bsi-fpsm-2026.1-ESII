@@ -6,18 +6,16 @@
 
 from notificador import Notificador
 
-
 class Academia:
     def __init__(self):
         self.alunos = []
         self.proximo_id = 1
-        self.notificador = Notificador()   # <- o componente de aviso, pronto para usar
+        self.notificador = Notificador()
 
     def matricular(self):
         nome = input("Nome do aluno: ")
         print("Planos: 1-Mensal  2-Trimestral  3-Anual")
         plano = input("Plano: ")
-
         if plano == "1":
             valor = 100.0
         elif plano == "2":
@@ -27,15 +25,10 @@ class Academia:
         else:
             print("Plano inválido.")
             return
-
         aluno = {"id": self.proximo_id, "nome": nome, "plano": plano, "checkins": 0}
         self.alunos.append(aluno)
         self.proximo_id += 1
-
-        # TODO: troque o aviso de boas-vindas por uma chamada ao notificador.
-        #   self.notificador.enviar( <para quem>, <a MESMA mensagem de boas-vindas da v1.0> )
-        ...
-
+        self.notificador.enviar(nome, f"Bem-vindo(a) a FitPará! Mensalidade: R${valor:.2f}/mês.")
         print(f"Aluno {aluno['id']} matriculado.")   # TELA: este fica
 
     def check_in(self):
@@ -49,11 +42,7 @@ class Academia:
             print("Aluno não encontrado.")
             return
         aluno["checkins"] += 1
-
-        # TODO: troque o aviso de confirmação por uma chamada ao notificador.
-        #   self.notificador.enviar( <para quem>, <a MESMA mensagem de check-in da v1.0> )
-        ...
-
+        self.notificador.enviar(nome, f"Olá, {nome}! Check-in número {aluno['checkins']} registrado.")
         print(f"Check-in de {nome} registrado. Total: {aluno['checkins']}.")   # TELA: este fica
 
     def listar(self):
@@ -67,7 +56,6 @@ class Academia:
                 valor = 80.0
             print(f"{a['id']}- {a['nome']}  (R${valor:.2f}/mês, {a['checkins']} check-ins)")
 
-
 def main():
     app = Academia()
     while True:
@@ -77,7 +65,6 @@ def main():
         elif op == "2": app.check_in()
         elif op == "3": app.listar()
         elif op == "0": break
-
 
 if __name__ == "__main__":
     main()
